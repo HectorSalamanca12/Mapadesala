@@ -14,13 +14,19 @@
   <!-- CSS do projeto -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- ===== MODO NOTURNO -> TESTE ===== -->
   <script>
     (function () {
       const tema = localStorage.getItem("tema") || "light";
       document.documentElement.setAttribute("data-bs-theme", tema);
     })();
   </script>
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -407,7 +413,7 @@
       // Ano (range simples)
       const anoAtual = new Date().getFullYear();
       sAno.innerHTML = "";
-      for (let y = anoAtual - 1; y <= anoAtual + 2; y++) {
+      for (let y = anoAtual - 30; y <= anoAtual + 2; y++) {
         const opt = document.createElement("option");
         opt.value = String(y);
         opt.textContent = String(y);
